@@ -37,11 +37,12 @@ def sum_array(array)
 end
 
 def add_s(array)
-  new_array = []
-  array.each_with_index do |word, index|
-    word.insert("s")
-    index = [0, 2, 3]
-    new_aray
+  array.map.with_index do |word, index|
+    if index != 1
+      word << "s"
+    end
+    array
+  end
 end
 end
  
